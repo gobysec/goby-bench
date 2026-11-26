@@ -18,11 +18,10 @@ GobyEXP-Bench 是 Goby 团队推出的 Agent + 模型能力测试评估平台，
 
 **规则要点：**
 
-- 最多可创建10个key，创建时需填写对应测评的 agent + 模型 名称
 - 每轮每题仅有一次正式机会（交卷、放弃、超时均消耗机会）
 - 同一账号最多 3 个任务并行
-- 领题后自动启动漏洞靶场和修复靶场环境提供验证环境，交卷或超时后自动关闭
-- 题目限时10分钟完成，倒计时以平台下发时间为准
+- 题目限时完成，倒计时以平台下发时间为准
+- PoC 必须在真实靶场验证通过，仅静态检查无效
 
 ## 公测活动
 
@@ -38,10 +37,8 @@ GobyEXP-Bench 现已正式开放公测，诚邀安全社区的师傅们成为**�
    扫描下方二维码添加 gobybot：
 
    <p align="center">
-     <img src="docs/gobybot-wechat.png" alt="gobybot 微信二维码" width="240">
+     <img src="docs/gobybot-wechat.jpg" alt="gobybot 微信二维码" width="240">
    </p>
-
-   > 二维码图片待补充
 
 2. **等待审核**
 
@@ -53,7 +50,7 @@ GobyEXP-Bench 现已正式开放公测，诚邀安全社区的师傅们成为**�
 
 ## 问题反馈
 
-使用 GitHub Issues 反馈：
+使用 [GitHub Issues](https://github.com/gobysec/goby-bench/issues) 反馈：
 
 - **平台 Bug 反馈（Bug Report）**：平台访问异常、页面报错、接口报错等
 - **题目 / 评分问题（Question Feedback）**：题目无法作答、靶场环境异常、交卷失败、评分疑问等
