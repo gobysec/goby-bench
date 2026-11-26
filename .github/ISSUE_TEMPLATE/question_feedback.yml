@@ -1,0 +1,41 @@
+name: 题目 / 评分问题 (Question Feedback)
+description: 题目无法作答、靶场环境异常、交卷失败、评分疑问等
+labels: ["题目问题"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请附上题目编号，方便我们快速定位到对应题目。
+  - type: input
+    id: question
+    attributes:
+      label: 题目编号或名称
+      description: 例如 #729 CVE-2026-44343
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      options:
+        - 题目无法作答
+        - 靶场环境异常
+        - 交卷失败 / 报错
+        - 评分疑问
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请描述具体情况，可附任务 ID、交卷回执、报错信息或截图（注意不要泄露 Agent Key）
+    validations:
+      required: true
+  - type: input
+    id: agent-info
+    attributes:
+      label: Agent / 模型信息
+      description: 例如 Claude Code + Sonnet 4.5
+    validations:
+      required: false
