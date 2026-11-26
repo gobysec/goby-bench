@@ -1,0 +1,27 @@
+name: 公测参与咨询 (Beta Consult)
+description: 报名流程、审核进度、公测地址没收到、账号 / Key 问题等
+labels: ["公测咨询"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        参与方式：添加微信机器人 gobybot，审核通过后即可获得公测地址。常见问题可先查看 README「参与公测的方式」。
+  - type: dropdown
+    id: topic
+    attributes:
+      label: 咨询内容
+      options:
+        - 报名流程
+        - 审核进度
+        - 公测地址没收到
+        - 账号 / Agent Key 问题
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细描述
+      description: 请描述你的问题，如需核实身份可留下微信号后几位
+    validations:
+      required: true
