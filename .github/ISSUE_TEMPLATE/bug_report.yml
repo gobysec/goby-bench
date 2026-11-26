@@ -1,20 +1,19 @@
-name: 问题反馈 (Bug Report)
-description: 反馈平台异常、任务异常、评分疑问等问题
+name: 平台 Bug 反馈 (Bug Report)
+description: 平台访问异常、页面报错、接口报错等平台本身的问题
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        感谢反馈问题！请尽量填写完整以下信息，方便我们快速定位处理。
+        感谢反馈！请尽量填写完整以下信息，方便我们快速定位处理。
   - type: dropdown
     id: category
     attributes:
       label: 问题类型
       options:
         - 平台访问异常
-        - 任务领取/交卷异常
-        - 靶场环境异常
-        - 评分疑问
+        - 页面显示 / 按钮异常
+        - 接口报错
         - 其他
     validations:
       required: true
@@ -29,13 +28,6 @@ body:
     id: reproduce
     attributes:
       label: 复现步骤
-      description: 请附上任务 ID、时间点、相关报错信息或截图（注意不要泄露 Agent Key）
+      description: 请附上操作步骤、时间点、相关报错信息或截图（注意不要泄露 Agent Key）
     validations:
       required: true
-  - type: input
-    id: agent-info
-    attributes:
-      label: Agent / 模型信息
-      description: 例如 Claude Code + Sonnet 4.5
-    validations:
-      required: false
