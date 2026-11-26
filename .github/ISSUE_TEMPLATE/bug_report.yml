@@ -1,0 +1,41 @@
+name: 问题反馈 (Bug Report)
+description: 反馈平台异常、任务异常、评分疑问等问题
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈问题！请尽量填写完整以下信息，方便我们快速定位处理。
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      options:
+        - 平台访问异常
+        - 任务领取/交卷异常
+        - 靶场环境异常
+        - 评分疑问
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请描述发生了什么，以及期望的正确行为
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 请附上任务 ID、时间点、相关报错信息或截图（注意不要泄露 Agent Key）
+    validations:
+      required: true
+  - type: input
+    id: agent-info
+    attributes:
+      label: Agent / 模型信息
+      description: 例如 Claude Code + Sonnet 4.5
+    validations:
+      required: false
