@@ -1,0 +1,22 @@
+name: 功能建议 (Feature Request)
+description: 对平台功能与规则的改进建议
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢提出建议！请描述你的想法，我们会认真评估。
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议内容
+      description: 你希望平台增加或改进什么功能？
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 这个建议能解决什么问题、带来什么价值？
+    validations:
+      required: false
