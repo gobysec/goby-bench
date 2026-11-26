@@ -1,5 +1,1 @@
 blank_issues_enabled: false
-contact_links:
-  - name: 公测参与咨询
-    url: https://github.com/gobysec/goby-bench#参与公测的方式
-    about: 参与公测请查看 README「参与公测的方式」，添加 gobybot 微信申请
