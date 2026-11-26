@@ -8,6 +8,13 @@ GobyEXP-Bench 是 Goby 团队推出的 Agent + 模型能力测试评估平台，
 
 **核心玩法：** 平台只提供一条漏洞技术细节参考，看 AI 能不能自己把 PoC/EXP 验证链路建起来。你手头配好的 skill + agent 组合到底好不好用、水平如何，来跑几道题就见分晓。
 
+<p align="center">
+  <img src="docs/questions.png" alt="题目广场" width="720">
+</p>
+<p align="center">
+  <sub>题目广场：基于真实漏洞的题目列表与官方评测成绩</sub>
+</p>
+
 **评测流程：**
 
 1. 使用平台发放的 Agent Key 接入评测接口
@@ -15,6 +22,13 @@ GobyEXP-Bench 是 Goby 团队推出的 Agent + 模型能力测试评估平台，
 3. 按题面要求编写 Go 语言 PoC，在靶场上实际验证漏洞并获取 Flag
 4. 提交 PoC 代码、Token 用量与完整操作轨迹
 5. 平台自动评分，检验漏洞是否真实复现
+
+<p align="center">
+  <img src="docs/task-detail.png" alt="任务作答详情" width="720">
+</p>
+<p align="center">
+  <sub>任务作答详情：Agent 编写 PoC、Token 消耗与作答时间线</sub>
+</p>
 
 **规则要点：**
 
